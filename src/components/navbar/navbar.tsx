@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
           title="Mudar tema claro/escuro"
           className={classNames(
             styles['theme-mode-button'],
-            styles['light-mode']
+            styles['light-mode'],
           )}
         />
       </nav>

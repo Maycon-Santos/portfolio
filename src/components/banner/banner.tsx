@@ -23,7 +23,7 @@ const Banner: React.FC = () => {
       <Image
         className={classNames(
           styles['background-image'],
-          breakPointMediumClassName
+          breakPointMediumClassName,
         )}
         src={wavingDoorwayImage}
         alt=""
@@ -32,7 +32,7 @@ const Banner: React.FC = () => {
         Component="div"
         className={classNames(
           styles['content-wrapper'],
-          breakPointMediumClassName
+          breakPointMediumClassName,
         )}
       >
         <Text

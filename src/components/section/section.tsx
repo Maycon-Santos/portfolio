@@ -32,7 +32,7 @@ const Section: React.FC<SectionProps> = (props) => {
             large: true,
           }),
         },
-        className
+        className,
       )}
     >
       {children}

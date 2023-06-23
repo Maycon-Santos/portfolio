@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = (props) => {
         styles.button,
         styles[`color-${color}`],
         styles[`size-${size}`],
-        className
+        className,
       )}
       {...rest}
     >

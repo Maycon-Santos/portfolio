@@ -51,7 +51,7 @@ const Text: React.FC<TextProps> = (props) => {
         styles[`style-${style}`],
         styles[`color-${color}`],
         styles[`line-distance-${lineDistance}`],
-        className
+        className,
       )}
       {...rest}
     >

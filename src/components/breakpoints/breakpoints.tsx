@@ -37,13 +37,13 @@ const breakpoints = {
 }
 
 const BreakpointsContext = createContext<Breakpoints>(
-  initialBreakPointsContextValue
+  initialBreakPointsContextValue,
 )
 
 export const BreakpointsProvider: React.FC<PropsWithChildren> = (props) => {
   const { children } = props
   const [breakpoint, setBreakpoint] = useState<Breakpoints>(
-    initialBreakPointsContextValue
+    initialBreakPointsContextValue,
   )
 
   useLayoutEffect(() => {
@@ -51,23 +51,23 @@ export const BreakpointsProvider: React.FC<PropsWithChildren> = (props) => {
       setBreakpoint({
         ...breakpoint,
         small: window.matchMedia(
-          `screen and (min-width: ${breakpoints.small}px)`
+          `screen and (min-width: ${breakpoints.small}px)`,
         ).matches,
         medium: window.matchMedia(
-          `screen and (min-width: ${breakpoints.medium}px)`
+          `screen and (min-width: ${breakpoints.medium}px)`,
         ).matches,
         large: window.matchMedia(
-          `screen and (min-width: ${breakpoints.large}px)`
+          `screen and (min-width: ${breakpoints.large}px)`,
         ).matches,
 
         minDown: window.matchMedia(
-          `screen and (max-width: ${breakpoints.small - 1}px)`
+          `screen and (max-width: ${breakpoints.small - 1}px)`,
         ).matches,
         smallDown: window.matchMedia(
-          `screen and (max-width: ${breakpoints.medium - 1}px)`
+          `screen and (max-width: ${breakpoints.medium - 1}px)`,
         ).matches,
         mediumDown: window.matchMedia(
-          `screen and (max-width: ${breakpoints.large - 1}px)`
+          `screen and (max-width: ${breakpoints.large - 1}px)`,
         ).matches,
       })
     }
@@ -100,7 +100,7 @@ const breakPointOrderToMatches: (keyof Breakpoints)[] = [
 // TODO: Improve typing to understand the return
 export const breakpointMatches = (
   breakpoints: Breakpoints,
-  matchesObj: { [k in keyof Partial<Breakpoints>]: any }
+  matchesObj: { [k in keyof Partial<Breakpoints>]: any },
 ) => {
   const matches = breakPointOrderToMatches.find((breakpoint) => {
     if (matchesObj[breakpoint] === undefined) {

@@ -16,7 +16,7 @@ const Divider: React.FC<DividerProps> = (props) => {
       className={classNames(
         styles.hr,
         styles[`spacing-top-${spacingTop}`],
-        styles[`spacing-bottom-${spacingBottom}`]
+        styles[`spacing-bottom-${spacingBottom}`],
       )}
     />
   )
