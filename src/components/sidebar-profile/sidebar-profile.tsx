@@ -26,7 +26,7 @@ const SidebarProfile: React.FC<SidebarProfileProps> = (props) => {
       <aside
         className={classNames(styles.wrapper, {
           [styles.open]: open,
-          [styles.large]: breakpointMatches(breakpoints, {
+          [styles['breakpoint-large']]: breakpointMatches(breakpoints, {
             min: false,
             large: true,
           }),

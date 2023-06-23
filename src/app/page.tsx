@@ -5,9 +5,9 @@ import { breakpointMatches, useBreakpoints } from '@/components/breakpoints'
 import MobileHeader from '@/components/mobile-header'
 import SidebarProfile from '@/components/sidebar-profile'
 import Banner from '@/components/banner'
-import Text from '@/components/text'
 import Section from '@/components/section'
 import Navbar from '@/components/navbar'
+import SkillCards from '@/components/skill-cards/skill-cards'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -24,22 +24,24 @@ export default function Home() {
         <SidebarProfile open={sideBarOpen} />
         <article className={styles.article}>
           <Section
-            lateralPadding={breakpointMatches(breakpoints, {
+            contentLateralPadding={breakpointMatches(breakpoints, {
               min: 'none',
               large: 'medium',
             })}
-            verticalPadding="none"
+            contentVerticalPadding="none"
           >
             <Banner />
           </Section>
-          <Section>
-            <Text Component="h1" size="extra-large" weight="medium">
-              Minhas skills
-            </Text>
-            <Text>
-              Aqui eu listo algumas tecnologias na qual tive contato ao longo da
-              minha carreira.
-            </Text>
+          <Section
+            title="Minhas skills"
+            subtitle="Aqui eu listo algumas tecnologias na qual tive contato ao longo da
+              minha carreira."
+            contentLateralPadding={breakpointMatches(breakpoints, {
+              min: 'none',
+              medium: 'medium',
+            })}
+          >
+            <SkillCards />
           </Section>
         </article>
         <Navbar />

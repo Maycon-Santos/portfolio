@@ -4,6 +4,10 @@
   align-items: center;
   border: none;
   color: var(--background-dark);
+  border-radius: 50px;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 300ms;
 
   &.color-foreground {
     background-color: var(--foreground);
@@ -13,7 +17,8 @@
     background-color: var(--cyan);
   }
 
-  &.size-small {
+  &.color-orange {
+    background-color: var(--orange);
   }
 
   &.size-medium {
@@ -22,5 +27,13 @@
   }
 
   &.size-large {
+    height: 44px;
+    padding: 0 var(--spacing-10);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    transform: scale(1.1, 1.1);
   }
 }

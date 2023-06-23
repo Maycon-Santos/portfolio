@@ -6,8 +6,8 @@ import styles from './button.module.css'
 interface ButtonProps extends PropsWithChildren {
   Component?: React.FC<any> | string
   className?: string
-  color?: 'foreground' | 'cyan'
-  size?: 'small' | 'medium' | 'large'
+  color?: 'foreground' | 'cyan' | 'orange'
+  size?: 'medium' | 'large'
   [k: string]: any
 }
 
