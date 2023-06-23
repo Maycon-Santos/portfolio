@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & + .line {
+        margin-top: var(--spacing-1);
+    }
+}
+
+.label {
+    padding: var(--spacing-0) var(--spacing-1);
+    background-color: var(--selection);
+}

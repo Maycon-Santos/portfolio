@@ -1,0 +1,27 @@
+.hr {
+    border: 1px var(--current-line) solid;
+
+    &.spacing-top-small {
+        margin-top: var(--spacing-3);
+    }
+
+    &.spacing-top-medium {
+        margin-top: var(--spacing-6);
+    }
+
+    &.spacing-top-large {
+        margin-top: var(--spacing-8);
+    }
+
+    &.spacing-bottom-small {
+        margin-bottom: var(--spacing-3);
+    }
+
+    &.spacing-bottom-medium {
+        margin-bottom: var(--spacing-6);
+    }
+
+    &.spacing-bottom-large {
+        margin-bottom: var(--spacing-8);
+    }
+}

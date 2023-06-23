@@ -1,95 +1,43 @@
-import Image from 'next/image'
+'use client'
+
+import { useState } from 'react'
+import { breakpointMatches, useBreakpoints } from '@/components/breakpoints'
+import MobileHeader from '@/components/mobile-header'
+import SidebarProfile from '@/components/sidebar-profile'
+import Banner from '@/components/banner'
+import Text from '@/components/text'
+import Section from '@/components/section'
+import Navbar from '@/components/navbar'
 import styles from './page.module.css'
 
 export default function Home() {
+  const breakpoints = useBreakpoints()
+  const [sideBarOpen, setSidebarOpen] = useState(false)
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <MobileHeader sideBarOpen={sideBarOpen} onClickSidebarButton={() => setSidebarOpen(!sideBarOpen)} />
+      <main className={styles.main}>
+        <SidebarProfile open={sideBarOpen} />
+        <article className={styles.article}>
+          <Section
+            lateralPadding={breakpointMatches(breakpoints, {
+              min: 'none',
+              large: 'medium'
+            })}
+            verticalPadding="none"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <Banner />
+          </Section>
+          <Section>
+            <Text Component="h1" size="extra-large" weight="medium">Minhas skills</Text>
+            <Text>
+              Aqui eu listo algumas tecnologias na qual tive contato ao longo da minha carreira.
+            </Text>
+          </Section>
+        </article>
+        <Navbar />
+      </main>
+    </>
   )
 }

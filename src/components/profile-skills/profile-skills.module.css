@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    margin-top: var(--spacing-3);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item + .item {
+    margin-top: var(--spacing-0);
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: var(--spacing-1);
+}

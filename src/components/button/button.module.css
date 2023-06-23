@@ -1,0 +1,28 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: var(--background-dark);
+    
+    &.color-foreground {
+        background-color: var(--foreground);
+    }
+
+    &.color-cyan {
+        background-color: var(--cyan);
+    }
+
+    &.size-small {
+
+    }
+
+    &.size-medium {
+        height: 36px;
+        padding: 0 var(--spacing-5);
+    }
+
+    &.size-large {
+        
+    }
+}
