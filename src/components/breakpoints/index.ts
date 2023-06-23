@@ -1,1 +1,5 @@
-export { BreakpointsProvider, useBreakpoints, breakpointMatches } from './breakpoints'
+export {
+  BreakpointsProvider,
+  useBreakpoints,
+  breakpointMatches,
+} from './breakpoints'

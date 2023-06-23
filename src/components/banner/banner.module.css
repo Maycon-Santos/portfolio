@@ -1,40 +1,44 @@
 .wrapper {
-    position: relative;
-    overflow: hidden;
-    background-color: var(--background-dark);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background-dark);
 }
 
 .background-image {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200%;
-    height: 100%;
-    object-fit: contain;
-    object-position: left bottom;
-    opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left bottom;
+  opacity: 0.2;
 
-    &.breakpoint-medium {
-        opacity: 1;
-    }
+  &.breakpoint-medium {
+    opacity: 1;
+  }
 }
 
 .content-wrapper {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: var(--spacing-7);
-    max-width: 600px;
-    
-    &.breakpoint-medium {
-        margin-left: auto;
-        max-width: 560px;
-        background-image: linear-gradient(45deg, var(--background-dark), transparent);
-    }
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: var(--spacing-7);
+  max-width: 600px;
+
+  &.breakpoint-medium {
+    margin-left: auto;
+    max-width: 560px;
+    background-image: linear-gradient(
+      45deg,
+      var(--background-dark),
+      transparent
+    );
+  }
 }
 
 .know-more-button {
-    margin-top: var(--spacing-5);
+  margin-top: var(--spacing-5);
 }

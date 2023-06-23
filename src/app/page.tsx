@@ -16,23 +16,29 @@ export default function Home() {
 
   return (
     <>
-      <MobileHeader sideBarOpen={sideBarOpen} onClickSidebarButton={() => setSidebarOpen(!sideBarOpen)} />
+      <MobileHeader
+        sideBarOpen={sideBarOpen}
+        onClickSidebarButton={() => setSidebarOpen(!sideBarOpen)}
+      />
       <main className={styles.main}>
         <SidebarProfile open={sideBarOpen} />
         <article className={styles.article}>
           <Section
             lateralPadding={breakpointMatches(breakpoints, {
               min: 'none',
-              large: 'medium'
+              large: 'medium',
             })}
             verticalPadding="none"
           >
             <Banner />
           </Section>
           <Section>
-            <Text Component="h1" size="extra-large" weight="medium">Minhas skills</Text>
+            <Text Component="h1" size="extra-large" weight="medium">
+              Minhas skills
+            </Text>
             <Text>
-              Aqui eu listo algumas tecnologias na qual tive contato ao longo da minha carreira.
+              Aqui eu listo algumas tecnologias na qual tive contato ao longo da
+              minha carreira.
             </Text>
           </Section>
         </article>

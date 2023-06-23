@@ -1,103 +1,103 @@
 .text {
-    font-family: inherit;
+  font-family: inherit;
 
-    &.color-normal {
-        color: var(--foreground);
-    }
+  &.color-normal {
+    color: var(--foreground);
+  }
 
-    &.color-inverse {
-        color: var(--background-dark);
-    }
+  &.color-inverse {
+    color: var(--background-dark);
+  }
 
-    &.size-tiny {
-        font-size: var(--font-size-1);
-    }
+  &.size-tiny {
+    font-size: var(--font-size-1);
+  }
 
-    &.size-small {
-        font-size: var(--font-size-2);
-    }
+  &.size-small {
+    font-size: var(--font-size-2);
+  }
 
-    &.size-medium {
-        font-size: var(--font-size-3);
-    }
+  &.size-medium {
+    font-size: var(--font-size-3);
+  }
 
-    &.size-large {
-        font-size: var(--font-size-4);
-    }
+  &.size-large {
+    font-size: var(--font-size-4);
+  }
 
-    &.size-extra-large {
-        font-size: var(--font-size-5);
-    }
+  &.size-extra-large {
+    font-size: var(--font-size-5);
+  }
 
-    &.size-giant {
-        font-size: var(--font-size-6);
-    }
+  &.size-giant {
+    font-size: var(--font-size-6);
+  }
 
-    &.size-extra-giant {
-        font-size: var(--font-size-9);
-    }
+  &.size-extra-giant {
+    font-size: var(--font-size-9);
+  }
 
-    &.weight-thin {
-        font-weight: 100;
-    }
+  &.weight-thin {
+    font-weight: 100;
+  }
 
-    &.weight-extra-light {
-        font-weight: 200;
-    }
+  &.weight-extra-light {
+    font-weight: 200;
+  }
 
-    &.weight-light {
-        font-weight: 300;
-    }
+  &.weight-light {
+    font-weight: 300;
+  }
 
-    &.weight-regular {
-        font-weight: 400;
-    }
+  &.weight-regular {
+    font-weight: 400;
+  }
 
-    &.weight-medium {
-        font-weight: 500;
-    }
+  &.weight-medium {
+    font-weight: 500;
+  }
 
-    &.weight-semibold {
-        font-weight: 600;
-    }
+  &.weight-semibold {
+    font-weight: 600;
+  }
 
-    &.weight-bold {
-        font-weight: 700;
-    }
+  &.weight-bold {
+    font-weight: 700;
+  }
 
-    &.weight-extra-bold {
-        font-weight: 800;
-    }
+  &.weight-extra-bold {
+    font-weight: 800;
+  }
 
-    &.weight-black {
-        font-weight: 900;
-    }
+  &.weight-black {
+    font-weight: 900;
+  }
 
-    &.style-oblique {
-        font-style: oblique;
-    }
+  &.style-oblique {
+    font-style: oblique;
+  }
 
-    &.style-italic {
-        font-style: italic;
-    }
+  &.style-italic {
+    font-style: italic;
+  }
 
-    &.style-normal {
-        font-style: normal;
-    }
+  &.style-normal {
+    font-style: normal;
+  }
 
-    &.line-distance-close {
-        line-height: 1;
-    }
+  &.line-distance-close {
+    line-height: 1;
+  }
 
-    &.line-distance-near {
-        line-height: 1.2;
-    }
+  &.line-distance-near {
+    line-height: 1.2;
+  }
 
-    &.line-distance-normal {
-        line-height: 1.4;
-    }
+  &.line-distance-normal {
+    line-height: 1.4;
+  }
 
-    &.line-distance-far {
-        line-height: 1.8;
-    }
+  &.line-distance-far {
+    line-height: 1.8;
+  }
 }

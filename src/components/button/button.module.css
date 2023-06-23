@@ -1,28 +1,26 @@
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    color: var(--background-dark);
-    
-    &.color-foreground {
-        background-color: var(--foreground);
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: var(--background-dark);
 
-    &.color-cyan {
-        background-color: var(--cyan);
-    }
+  &.color-foreground {
+    background-color: var(--foreground);
+  }
 
-    &.size-small {
+  &.color-cyan {
+    background-color: var(--cyan);
+  }
 
-    }
+  &.size-small {
+  }
 
-    &.size-medium {
-        height: 36px;
-        padding: 0 var(--spacing-5);
-    }
+  &.size-medium {
+    height: 36px;
+    padding: 0 var(--spacing-5);
+  }
 
-    &.size-large {
-        
-    }
+  &.size-large {
+  }
 }
