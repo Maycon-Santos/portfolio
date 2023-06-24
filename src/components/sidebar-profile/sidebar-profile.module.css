@@ -20,6 +20,7 @@
     height: 100vh;
     transform: none;
     padding: var(--spacing-10) var(--spacing-7);
+    transition: none;
   }
 }
 
