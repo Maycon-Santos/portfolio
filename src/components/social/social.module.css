@@ -1,0 +1,27 @@
+.wrapper {
+
+}
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% + (var(--spacing-3) * -2));
+  margin: calc(var(--spacing-3) * -1);
+
+  &.breakpoint-medium {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.social-item {
+  display: flex;
+  margin: var(--spacing-3);
+}
+
+.social-item-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--spacing-3);
+}
