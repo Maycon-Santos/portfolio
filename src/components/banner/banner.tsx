@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import classNames from 'classnames'
+import { useRef } from 'react'
 import wavingDoorwayImage from '@/assets/waving-doorway.png'
 import Text from '@/components/text'
 import Section from '@/components/section'
@@ -10,6 +11,7 @@ import styles from './banner.module.css'
 
 const Banner: React.FC = () => {
   const breakpoints = useBreakpoints()
+  const refWrapper = useRef<HTMLDivElement>(null)
 
   const breakPointMediumClassName = {
     [styles['breakpoint-medium']]: breakpointMatches(breakpoints, {
@@ -19,7 +21,7 @@ const Banner: React.FC = () => {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} ref={refWrapper}>
       <Image
         className={classNames(
           styles['background-image'],
@@ -46,7 +48,16 @@ const Banner: React.FC = () => {
           {bannerTitle}
         </Text>
         <Text>{bannerText}</Text>
-        <Button className={styles['know-more-button']} color="cyan">
+        <Button
+          className={styles['know-more-button']}
+          color="cyan"
+          onClick={() => {
+            window.scrollTo({
+              top: refWrapper.current?.clientHeight,
+              behavior: 'smooth',
+            })
+          }}
+        >
           SAIBA MAIS
         </Button>
       </Section>
