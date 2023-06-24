@@ -7,12 +7,16 @@
 }
 
 .experience-item {
+  position: relative;
+
   &.breakpoint-medium {
     display: flex;
   }
 }
 
 .logo-image {
+  position: sticky;
+  top: var(--spacing-3);
   width: 100%;
   max-width: 200px;
   height: auto;
