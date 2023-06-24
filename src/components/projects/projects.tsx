@@ -1,11 +1,12 @@
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import classNames from 'classnames'
 import Text from '@/components/text'
 import Divider from '@/components/divider'
-import { breakpointMatches, useBreakpoints } from '@/components/breakpoints'
+import { useBreakpoints } from '@/components/breakpoints'
 import { projects } from '@/data/projects'
 import styles from './projects.module.css'
-import classNames from 'classnames'
 
 const Projects: React.FC = () => {
   const breakpoints = useBreakpoints()
@@ -17,14 +18,13 @@ const Projects: React.FC = () => {
     <div className={styles.wrapper}>
       <div className={styles['project-list']}>
         {projects.map(({ name, description, image, links }, index) => (
-          <>
+          <React.Fragment key={name}>
             {index > 0 && <Divider spacingTop="large" spacingBottom="large" />}
             <div
               className={classNames(
                 styles['project-item'],
                 styles[breakpointMediumClassName],
               )}
-              key={name}
             >
               <Image
                 src={image}
@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
                 </div>
               </div>
             </div>
-          </>
+          </React.Fragment>
         ))}
       </div>
     </div>

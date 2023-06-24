@@ -1,0 +1,42 @@
+.wrapper {
+
+}
+
+.experience-list {
+
+}
+
+.experience-item {
+  &.breakpoint-medium {
+    display: flex;
+  }
+}
+
+.logo-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+
+  &.breakpoint-medium {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.content {
+  margin-top: var(--spacing-2);
+
+  &.breakpoint-medium {
+    margin-top: 0;
+    margin-left: var(--spacing-3);
+  }
+}
+
+.description {
+  display: block;
+  margin-top: var(--spacing-1);
+
+  & p + p {
+    margin-top: 1em;
+  }
+}

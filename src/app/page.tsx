@@ -9,6 +9,7 @@ import Section from '@/components/section'
 import Navbar from '@/components/navbar'
 import SkillCards from '@/components/skill-cards/skill-cards'
 import Projects from '@/components/projects/projects'
+import Experiences from '@/components/experiences/experiences'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -49,6 +50,12 @@ export default function Home() {
             subtitle="Abaixo estão alguns dos projetos que considero interessantes e desafiadores."
           >
             <Projects />
+          </Section>
+          <Section
+            title="Minhas experiências"
+            subtitle="Aqui eu listo as empresas que trabalhei em tempo integral e descrevo minha experiência em cada uma delas."
+          >
+            <Experiences />
           </Section>
         </article>
         <Navbar />
