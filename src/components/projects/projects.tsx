@@ -42,6 +42,7 @@ const Projects: React.FC = () => {
                       Component={Link}
                       href={links.video}
                       className={styles['link-item']}
+                      target="_blank"
                     >
                       Vídeo de demonstração
                     </Text>
@@ -51,6 +52,7 @@ const Projects: React.FC = () => {
                       Component={Link}
                       href={links.liveDemo}
                       className={styles['link-item']}
+                      target="_blank"
                     >
                       Confira o resultado
                     </Text>
@@ -60,6 +62,7 @@ const Projects: React.FC = () => {
                       Component={Link}
                       href={links.repository}
                       className={styles['link-item']}
+                      target="_blank"
                     >
                       Confira o repositório no Github
                     </Text>
