@@ -26,6 +26,14 @@ const Projects: React.FC = () => {
               )}
               key={name}
             >
+              <Image
+                src={image}
+                alt=""
+                className={classNames(
+                  styles['demo-image'],
+                  styles[breakpointMediumClassName],
+                )}
+              />
               <div
                 className={classNames(
                   styles.content,
@@ -69,14 +77,6 @@ const Projects: React.FC = () => {
                   )}
                 </div>
               </div>
-              <Image
-                src={image}
-                alt=""
-                className={classNames(
-                  styles['demo-image'],
-                  styles[breakpointMediumClassName],
-                )}
-              />
             </div>
           </>
         ))}
