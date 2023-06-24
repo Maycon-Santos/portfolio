@@ -12,6 +12,7 @@ const Experiences: React.FC = () => {
   const breakpointMediumClassName = breakpoints.medium
     ? 'breakpoint-medium'
     : ''
+  const breakpointLargeClassName = breakpoints.large ? 'breakpoint-large' : ''
 
   return (
     <div className={styles.wrapper}>
@@ -30,6 +31,7 @@ const Experiences: React.FC = () => {
                 className={classNames(
                   styles['logo-image'],
                   styles[breakpointMediumClassName],
+                  styles[breakpointLargeClassName],
                 )}
                 alt=""
               />

@@ -11,6 +11,7 @@ import SkillCards from '@/components/skill-cards/skill-cards'
 import Projects from '@/components/projects/projects'
 import Experiences from '@/components/experiences/experiences'
 import Social from '@/components/social/social'
+import Footer from '@/components/footer/footer'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -64,6 +65,7 @@ export default function Home() {
         </article>
         <Navbar />
       </main>
+      <Footer />
     </>
   )
 }

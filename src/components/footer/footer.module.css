@@ -1,0 +1,6 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border-top: 1px var(--current-line) solid;
+  background-color: var(--background-dark);
+}
