@@ -15,13 +15,13 @@
 }
 
 .logo-image {
-  position: sticky;
-  top: var(--spacing-3);
   width: 100%;
   max-width: 200px;
   height: auto;
 
   &.breakpoint-medium {
+    position: sticky;
+    top: var(--spacing-3);
     width: 120px;
     height: 120px;
   }
