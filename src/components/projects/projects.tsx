@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
                   styles[breakpointMediumClassName],
                 )}
               >
-                <Text Component="h3" weight="medium" size="large">
+                <Text Component="h3" weight="medium">
                   {name}
                 </Text>
                 <Text className={styles.description}>{description}</Text>
