@@ -107,6 +107,14 @@
   }
 }
 
+body:global(.light-mode) {
+  .text {
+    &.color-inverse {
+      color: white;
+    }
+  }
+}
+
 a.text {
   position: relative;
   color: var(--pink);

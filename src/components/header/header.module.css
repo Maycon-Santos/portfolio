@@ -5,10 +5,16 @@
   z-index: 2;
   display: flex;
   align-items: center;
-  height: 64px;
-  padding: 0 var(--spacing-3);
+  min-height: 64px;
+  padding: var(--spacing-2) var(--spacing-3);
   box-sizing: border-box;
   background-color: var(--background-dark);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .profile-picture {
@@ -32,9 +38,9 @@
   width: 28px;
   height: 20px;
   padding: 0;
-  margin-left: auto;
   background: none;
   border: none;
+  margin-left: var(--spacing-3);
 
   &::before,
   &::after {
@@ -65,7 +71,6 @@
 
 .social-links {
   display: flex;
-  margin-left: auto;
 
   & .social-icon + .social-icon {
     margin-left: var(--spacing-3);
@@ -73,5 +78,5 @@
 }
 
 .download-cv-button {
-  margin-left: var(--spacing-5);
+  margin: 0 var(--spacing-5);
 }

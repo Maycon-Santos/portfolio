@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   border: none;
+  text-wrap: nowrap;
   color: var(--background-dark);
   border-radius: 50px;
   cursor: pointer;

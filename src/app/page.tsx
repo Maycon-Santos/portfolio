@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { breakpointMatches, useBreakpoints } from '@/components/breakpoints'
-import MobileHeader from '@/components/mobile-header'
+import Header from '@/components/header'
 import SidebarProfile from '@/components/sidebar-profile'
 import Banner from '@/components/banner'
 import Section from '@/components/section'
@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <MobileHeader
+      <Header
         sideBarOpen={sideBarOpen}
         onClickSidebarButton={() => setSidebarOpen(!sideBarOpen)}
       />

@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import { Metadata } from 'next'
 import React, { PropsWithChildren } from 'react'
 import { BreakpointsProvider } from '@/components/breakpoints/breakpoints'
+import ThemeModeProvider from '@/components/theme-mode/theme-mode'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -17,11 +18,13 @@ const RootLayout: React.FC<PropsWithChildren> = (props) => {
 
   return (
     <BreakpointsProvider>
-      <html lang="pt">
-        <body className={classNames(montserrat.className, 'dark-mode')}>
-          {children}
-        </body>
-      </html>
+      <ThemeModeProvider>
+        <html lang="pt">
+          <body className={classNames(montserrat.className, 'dark-mode')}>
+            {children}
+          </body>
+        </html>
+      </ThemeModeProvider>
     </BreakpointsProvider>
   )
 }

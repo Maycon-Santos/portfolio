@@ -1,5 +1,5 @@
-import classNames from 'classnames'
-import { breakpointMatches, useBreakpoints } from '../breakpoints'
+import { breakpointMatches, useBreakpoints } from '@/components/breakpoints'
+import ThemeModeButton from '@/components/theme-mode-button'
 import styles from './navbar.module.css'
 
 const Navbar: React.FC = () => {
@@ -8,13 +8,7 @@ const Navbar: React.FC = () => {
   return (
     breakpointMatches(breakpoints, { min: false, large: true }) && (
       <nav className={styles.wrapper}>
-        <button
-          title="Mudar tema claro/escuro"
-          className={classNames(
-            styles['theme-mode-button'],
-            styles['light-mode'],
-          )}
-        />
+        <ThemeModeButton />
       </nav>
     )
   )

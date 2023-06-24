@@ -21,7 +21,7 @@
 
   &.breakpoint-medium {
     position: sticky;
-    top: calc(64px + var(--spacing-3));
+    top: calc(72px + var(--spacing-3));
     width: 120px;
     height: 120px;
   }

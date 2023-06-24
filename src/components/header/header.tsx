@@ -9,15 +9,16 @@ import profilePicture from '@/assets/profile.jpg'
 import Text from '@/components/text'
 import SocialIcon from '@/components/social-icon'
 import Button from '@/components/button'
+import ThemeModeButton from '@/components/theme-mode-button'
 import { profileName, profileOffice, socialData } from '@/data/profile'
-import styles from './mobile-header.module.css'
+import styles from './header.module.css'
 
-type MobileHeaderProps = {
+type HeaderProps = {
   onClickSidebarButton: () => void
   sideBarOpen: boolean
 }
 
-const MobileHeader: React.FC<MobileHeaderProps> = (props) => {
+const Header: React.FC<HeaderProps> = (props) => {
   const { onClickSidebarButton, sideBarOpen } = props
   const breakpoints = useBreakpoints()
 
@@ -25,26 +26,31 @@ const MobileHeader: React.FC<MobileHeaderProps> = (props) => {
     breakpointMatches(breakpoints, { large: false }) && (
       <>
         <header className={styles.wrapper}>
-          <Image
-            className={styles['profile-picture']}
-            src={profilePicture}
-            alt=""
-          />
-          <div className={styles['name-wrapper']}>
-            <Text size="large" weight="medium" lineDistance="near">
-              {profileName}
-            </Text>
-            <Text size="small" style="italic">
-              {profileOffice}
-            </Text>
+          <div className={styles.profile}>
+            <Image
+              className={styles['profile-picture']}
+              src={profilePicture}
+              alt=""
+            />
+            <div className={styles['name-wrapper']}>
+              <Text size="large" weight="medium" lineDistance="near">
+                {profileName}
+              </Text>
+              <Text size="small" style="italic">
+                {profileOffice}
+              </Text>
+            </div>
           </div>
           {breakpointMatches(breakpoints, { medium: false }) && (
-            <button
-              className={classNames(styles['sidebar-toggle-button'], {
-                [styles.open]: sideBarOpen,
-              })}
-              onClick={onClickSidebarButton}
-            />
+            <>
+              <ThemeModeButton />
+              <button
+                className={classNames(styles['sidebar-toggle-button'], {
+                  [styles.open]: sideBarOpen,
+                })}
+                onClick={onClickSidebarButton}
+              />
+            </>
           )}
           {breakpointMatches(breakpoints, { min: false, medium: true }) && (
             <>
@@ -57,6 +63,7 @@ const MobileHeader: React.FC<MobileHeaderProps> = (props) => {
               >
                 DOWNLOAD CV
               </Button>
+              <ThemeModeButton />
             </>
           )}
         </header>
@@ -82,4 +89,4 @@ const Socials: React.FC = () => {
   )
 }
 
-export default MobileHeader
+export default Header
