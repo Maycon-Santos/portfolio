@@ -4,11 +4,21 @@ import nodeLogoImage from '@/assets/skills/node-js.svg'
 import nextLogoImage from '@/assets/skills/next-js.svg'
 import reactNativeLogoImage from '@/assets/skills/react-native.svg'
 import electronLogoImage from '@/assets/skills/electron.svg'
+import gitLogoImage from '@/assets/skills/git.svg'
+import goLang from '@/assets/skills/golang.svg'
+import pythonLogoImage from '@/assets/skills/python.svg'
+import phpLogoImage from '@/assets/skills/php.svg'
+import mySql from '@/assets/skills/mysql.svg'
+import postgresqlLogoImage from '@/assets/skills/postgresql.svg'
+import mongoDBLogoImage from '@/assets/skills/mongodb.svg'
+import angularLogoImage from '@/assets/skills/angular.svg'
+import vueLogoImage from '@/assets/skills/vue.svg'
 
 import reactLogoImageLight from '@/assets/skills/react-js-light.svg'
 import nodeLogoImageLight from '@/assets/skills/node-js-light.svg'
 import nextLogoImageLight from '@/assets/skills/next-js-light.svg'
 import reactNativeLogoImageLight from '@/assets/skills/react-native-light.svg'
+import mongoDBLogoImageLight from '@/assets/skills/mongodb-light.svg'
 
 export const skills = [
   {
@@ -65,52 +75,85 @@ export const skills = [
       dark: electronLogoImage,
     },
   },
-  // {
-  //   name: "",
-  //   description: "",
-  //   logoImage: {
-  //     light: "",
-  //     dark: ""
-  //   },
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   logoImage: {
-  //     light: "",
-  //     dark: ""
-  //   },
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   logoImage: {
-  //     light: "",
-  //     dark: ""
-  //   },
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   logoImage: {
-  //     light: "",
-  //     dark: ""
-  //   },
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   logoImage: {
-  //     light: "",
-  //     dark: ""
-  //   },
-  // },
-  // {
-  //   name: "",
-  //   description: "",
-  //   logoImage: {
-  //     light: "",
-  //     dark: ""
-  //   },
-  // },
+  {
+    name: 'MongoDB',
+    description:
+      'MongoDB é um banco de dados NoSQL de alta performance e escalabilidade. Com sua estrutura de documentos flexível e indexação poderosa, é ideal para armazenar e processar grandes volumes de dados não estruturados. É amplamente utilizado em aplicações web, análise de dados e gerenciamento de conteúdo, oferecendo agilidade e eficiência no armazenamento e acesso aos dados.',
+    logoImage: {
+      light: mongoDBLogoImageLight,
+      dark: mongoDBLogoImage,
+    },
+  },
+  {
+    name: 'Angular',
+    description:
+      'Angular é uma poderosa plataforma de desenvolvimento de aplicativos web. Com base no TypeScript, oferece um conjunto abrangente de recursos para criação de interfaces de usuário dinâmicas e interativas. Com suporte a componentização, roteamento, injeção de dependência e reatividade, o Angular é amplamente utilizado para construir aplicações web escaláveis e de alto desempenho.',
+    logoImage: {
+      light: angularLogoImage,
+      dark: angularLogoImage,
+    },
+  },
+  {
+    name: 'Vue',
+    description:
+      'Vue2 é um framework JavaScript progressivo e de fácil aprendizado para criação de interfaces de usuário interativas. Com uma sintaxe intuitiva, ele permite criar componentes reutilizáveis e oferece recursos avançados, como vinculação de dados bidirecional e renderização eficiente.',
+    logoImage: {
+      light: vueLogoImage,
+      dark: vueLogoImage,
+    },
+  },
+  {
+    name: 'Git',
+    description:
+      'O Git é um sistema de controle de versão amplamente utilizado. Ele permite que você acompanhe e registre alterações em arquivos, colabore com outros desenvolvedores e reverta alterações indesejadas. É eficiente, flexível e essencial para o desenvolvimento de software moderno.',
+    logoImage: {
+      light: gitLogoImage,
+      dark: gitLogoImage,
+    },
+  },
+  {
+    name: 'Go',
+    description:
+      'Go, também conhecida como Golang, é uma linguagem de programação eficiente e concorrente. Projetada pelo Google, ela combina a simplicidade de sintaxe com recursos avançados, como coleta de lixo automática e concorrência nativa. É amplamente usada para desenvolvimento de sistemas de rede, serviços web e aplicativos de alta performance.',
+    logoImage: {
+      light: goLang,
+      dark: goLang,
+    },
+  },
+  {
+    name: 'Python',
+    description:
+      'Python é uma linguagem de programação de alto nível, interpretada e versátil. Com uma sintaxe limpa e legível, é amplamente usada para desenvolvimento web, análise de dados, automação, inteligência artificial e muito mais. Com sua vasta biblioteca padrão e comunidade ativa, é uma escolha popular para programadores de todos os níveis de experiência.',
+    logoImage: {
+      light: pythonLogoImage,
+      dark: pythonLogoImage,
+    },
+  },
+  {
+    name: 'PHP',
+    description:
+      'PHP é uma linguagem de programação amplamente usada para desenvolvimento web. É especialmente adequada para criar sites dinâmicos e interativos. Com sua vasta comunidade e extensa biblioteca, o PHP permite integrar bancos de dados, processar formulários e criar aplicativos web robustos de forma eficiente.',
+    logoImage: {
+      light: phpLogoImage,
+      dark: phpLogoImage,
+    },
+  },
+  {
+    name: 'MySQL',
+    description:
+      'MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto. Ele é amplamente utilizado em aplicações web para armazenar e gerenciar grandes quantidades de dados. Com sua rápida velocidade de processamento e recursos avançados, como suporte a transações e replicação.',
+    logoImage: {
+      light: mySql,
+      dark: mySql,
+    },
+  },
+  {
+    name: 'Postgresql',
+    description:
+      'PostgreSQL é um banco de dados relacional de código aberto conhecido por sua confiabilidade, desempenho e recursos avançados. Com suporte a transações ACID, replicação, extensibilidade e recursos geoespaciais, é uma escolha popular para empresas e projetos que exigem um banco de dados escalável e flexível.',
+    logoImage: {
+      light: postgresqlLogoImage,
+      dark: postgresqlLogoImage,
+    },
+  },
 ]
