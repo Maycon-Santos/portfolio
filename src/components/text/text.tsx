@@ -25,7 +25,7 @@ interface TextProps extends PropsWithChildren {
     | 'black'
   style?: 'oblique' | 'italic' | 'normal'
   lineDistance?: 'close' | 'near' | 'normal' | 'far'
-  color?: 'normal' | 'inverse'
+  color?: 'normal' | 'inverse' | ''
   [k: string]: any
 }
 
@@ -36,7 +36,7 @@ const Text: React.FC<TextProps> = (props) => {
     style = 'normal',
     size = 'medium',
     lineDistance = 'normal',
-    color = 'normal',
+    color,
     className,
     children,
     ...rest

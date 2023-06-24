@@ -1,4 +1,5 @@
 .text {
+  color: var(--foreground);
   font-family: inherit;
 
   &.color-normal {
@@ -7,6 +8,10 @@
 
   &.color-inverse {
     color: var(--background-dark);
+  }
+
+  &.color-pink {
+    color: var(--pink);
   }
 
   &.size-tiny {
@@ -99,5 +104,21 @@
 
   &.line-distance-far {
     line-height: 1.8;
+  }
+}
+
+a.text {
+  position: relative;
+  color: var(--pink);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
   }
 }

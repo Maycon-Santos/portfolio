@@ -8,6 +8,7 @@ import Banner from '@/components/banner'
 import Section from '@/components/section'
 import Navbar from '@/components/navbar'
 import SkillCards from '@/components/skill-cards/skill-cards'
+import Projects from '@/components/projects/projects'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -42,6 +43,12 @@ export default function Home() {
             })}
           >
             <SkillCards />
+          </Section>
+          <Section
+            title="Projetos"
+            subtitle="Abaixo estão alguns dos projetos que considero interessantes e desafiadores."
+          >
+            <Projects />
           </Section>
         </article>
         <Navbar />
