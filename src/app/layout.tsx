@@ -50,6 +50,9 @@ const RootLayout: React.FC<PropsWithChildren> = (props) => {
                 gtag('config', 'G-JTPMGZQ7NJ');
               `}
             </Script>
+            <link rel="manifest" href="/manifest.json" />
+            <link rel="apple-touch-icon" href="/icon.png"></link>
+            <meta name="theme-color" content="#21222c" />
           </head>
           <body className={classNames(montserrat.className, 'dark-mode')}>
             {children}
