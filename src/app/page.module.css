@@ -1,3 +1,8 @@
+.wrapper {
+  transition: opacity;
+  transition-duration: 500ms;
+}
+
 .main {
   display: flex;
   max-width: 1502px;
@@ -11,4 +16,12 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: var(--spacing-10);
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    &.loading {
+      opacity: 0;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import classNames from 'classnames'
 import { breakpointMatches, useBreakpoints } from '@/components/breakpoints'
 import Header from '@/components/header'
 import SidebarProfile from '@/components/sidebar-profile'
@@ -17,9 +18,16 @@ import styles from './page.module.css'
 export default function Home() {
   const breakpoints = useBreakpoints()
   const [sideBarOpen, setSidebarOpen] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    setIsLoading(false)
+  }, [])
 
   return (
-    <>
+    <div
+      className={classNames(styles.wrapper, { [styles.loading]: isLoading })}
+    >
       <Header
         sideBarOpen={sideBarOpen}
         onClickSidebarButton={() => setSidebarOpen(!sideBarOpen)}
@@ -66,6 +74,6 @@ export default function Home() {
         <Navbar />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
