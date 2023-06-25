@@ -10,8 +10,23 @@ import { profileName } from '@/data/profile'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: profileName,
-  description: '',
+  title: 'Maycon - Desenvolvedor web full-stack',
+  description:
+    'Olá, eu sou o Maycon, um desenvolvedor web full-stack apaixonado por criar sites e aplicativos incríveis com as melhores tecnologias. Neste site você pode ver meu portfólio e meu contato.',
+  keywords:
+    'desenvolvedor web full-stack no Brasil, criação de sites e aplicativos, portfólio profissional, dicas de programação, HTML, CSS, JavaScript, React, Next.js, Node.js, MongoDB, Firebase, WordPress, SEO, marketing digital, e-commerce',
+  robots: 'index, follow',
+  authors: {
+    name: 'Maycon Santos',
+    url: 'https://www.linkedin.com/in/maycon-link/',
+  },
+  openGraph: {
+    title: 'Maycon - Desenvolvedor web full-stack',
+    description:
+      'Olá, eu sou o Maycon, um desenvolvedor web full-stack apaixonado por criar sites e aplicativos incríveis com as melhores tecnologias. Neste site você pode ver meu portfólio e meu contato.',
+    images: 'og-image.png',
+    type: 'profile',
+  },
 }
 
 const RootLayout: React.FC<PropsWithChildren> = (props) => {
