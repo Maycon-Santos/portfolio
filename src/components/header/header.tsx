@@ -49,6 +49,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                   [styles.open]: sideBarOpen,
                 })}
                 onClick={onClickSidebarButton}
+                aria-label="Ver perfil"
               />
             </>
           )}
