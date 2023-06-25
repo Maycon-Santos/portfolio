@@ -69,6 +69,7 @@ const SidebarProfile: React.FC<SidebarProfileProps> = (props) => {
           </>
         )}
         <Button
+          prefetch={false}
           className={styles['download-cv-button']}
           Component="a"
           href="/curriculo.pdf"
