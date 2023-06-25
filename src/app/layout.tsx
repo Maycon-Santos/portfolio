@@ -6,6 +6,7 @@ import React, { PropsWithChildren } from 'react'
 import { BreakpointsProvider } from '@/components/breakpoints/breakpoints'
 import ThemeModeProvider from '@/components/theme-mode/theme-mode'
 import { profileName } from '@/data/profile'
+import Script from 'next/script'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 

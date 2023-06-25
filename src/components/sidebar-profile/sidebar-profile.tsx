@@ -71,7 +71,7 @@ const SidebarProfile: React.FC<SidebarProfileProps> = (props) => {
         <Button
           className={styles['download-cv-button']}
           Component={Link}
-          href="http://google.com"
+          href="/curriculo.pdf"
           target="_blank"
         >
           DOWNLOAD CV
