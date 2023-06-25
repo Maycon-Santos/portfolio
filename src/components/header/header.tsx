@@ -57,7 +57,6 @@ const Header: React.FC<HeaderProps> = (props) => {
             <>
               <Socials />
               <Button
-                prefetch={false}
                 className={styles['download-cv-button']}
                 Component="a"
                 href="/curriculo.pdf"
