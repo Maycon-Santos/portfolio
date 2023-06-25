@@ -6,6 +6,7 @@ import React, { PropsWithChildren } from 'react'
 import { BreakpointsProvider } from '@/components/breakpoints/breakpoints'
 import ThemeModeProvider from '@/components/theme-mode/theme-mode'
 import './globals.css'
+import Pwa from './pwa'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -33,33 +34,32 @@ const RootLayout: React.FC<PropsWithChildren> = (props) => {
   const { children } = props
 
   return (
-    <BreakpointsProvider>
-      <ThemeModeProvider>
-        <html lang="pt">
-          <head>
-            <Script
-              async
-              src="https://www.googletagmanager.com/gtag/js?id=G-JTPMGZQ7NJ"
-            />
-            <Script id="gtag">
-              {`
+    <html lang="pt">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JTPMGZQ7NJ"
+        />
+        <Script id="gtag">
+          {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
                 gtag('config', 'G-JTPMGZQ7NJ');
               `}
-            </Script>
-            <link rel="manifest" href="/manifest.json" />
-            <link rel="apple-touch-icon" href="/icon.png"></link>
-            <meta name="theme-color" content="#21222c" />
-          </head>
-          <body className={classNames(montserrat.className, 'dark-mode')}>
-            {children}
-          </body>
-        </html>
-      </ThemeModeProvider>
-    </BreakpointsProvider>
+        </Script>
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <meta name="theme-color" content="#21222c" />
+      </head>
+      <body className={classNames(montserrat.className, 'dark-mode')}>
+        <BreakpointsProvider>
+          <ThemeModeProvider>{children}</ThemeModeProvider>
+        </BreakpointsProvider>
+        <Pwa />
+      </body>
+    </html>
   )
 }
 
