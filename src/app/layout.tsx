@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Maycon - Desenvolvedor web full-stack',
     description:
       'Olá, eu sou o Maycon, um desenvolvedor web full-stack apaixonado por criar sites e aplicativos incríveis com as melhores tecnologias. Neste site você pode ver meu portfólio e meu contato.',
-    images: 'og-image.png',
+    images: 'images/og-image.png',
     type: 'profile',
   },
 }
