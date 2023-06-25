@@ -58,7 +58,7 @@ const Header: React.FC<HeaderProps> = (props) => {
               <Socials />
               <Button
                 className={styles['download-cv-button']}
-                Component={Link}
+                Component="a"
                 href="/curriculo.pdf"
                 target="_blank"
               >

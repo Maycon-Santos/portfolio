@@ -32,7 +32,10 @@ const SkillCards: React.FC = () => {
       >
         {skillsToShow.map(({ name, description, logoImage }) => (
           <div
-            className={classNames(styles.card, styles[breakpointClassNames])}
+            className={classNames(
+              styles['card-item'],
+              styles[breakpointClassNames],
+            )}
             key={name}
           >
             <Image src={logoImage[themeMode]} className={styles.logo} alt="" />

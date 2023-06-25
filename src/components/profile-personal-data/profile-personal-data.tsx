@@ -11,14 +11,14 @@ const ProfilePersonalData: React.FC = () => {
         </Text>
         <Text lineDistance="close">25</Text>
       </div>
-      <div className={styles.line}>
+      <address className={styles.line}>
         <Text className={styles.label} size="small" lineDistance="close">
           Endereço:
         </Text>
         <Text size="small" lineDistance="close">
           Rio de Janeiro
         </Text>
-      </div>
+      </address>
     </div>
   )
 }

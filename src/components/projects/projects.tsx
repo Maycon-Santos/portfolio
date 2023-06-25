@@ -33,6 +33,7 @@ const Projects: React.FC = () => {
                   styles['demo-image'],
                   styles[breakpointMediumClassName],
                 )}
+                priority={false}
               />
               <div
                 className={classNames(

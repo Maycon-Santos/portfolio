@@ -11,6 +11,8 @@
   transition-property: transform;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow-y: auto;
+  flex: 1 0 auto;
 
   &.breakpoint-large {
     position: sticky;
