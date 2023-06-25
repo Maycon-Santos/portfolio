@@ -1,12 +1,11 @@
-import './globals.css'
 import { Montserrat } from 'next/font/google'
+import Script from 'next/script'
 import classNames from 'classnames'
 import { Metadata } from 'next'
 import React, { PropsWithChildren } from 'react'
 import { BreakpointsProvider } from '@/components/breakpoints/breakpoints'
 import ThemeModeProvider from '@/components/theme-mode/theme-mode'
-import { profileName } from '@/data/profile'
-import Script from 'next/script'
+import './globals.css'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -37,6 +36,21 @@ const RootLayout: React.FC<PropsWithChildren> = (props) => {
     <BreakpointsProvider>
       <ThemeModeProvider>
         <html lang="pt">
+          <head>
+            <Script
+              async
+              src="https://www.googletagmanager.com/gtag/js?id=G-JTPMGZQ7NJ"
+            />
+            <Script id="gtag">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-JTPMGZQ7NJ');
+              `}
+            </Script>
+          </head>
           <body className={classNames(montserrat.className, 'dark-mode')}>
             {children}
           </body>
