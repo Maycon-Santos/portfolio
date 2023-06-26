@@ -17,44 +17,71 @@ const Experiences: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles['experience-list']}>
-        {experiences.map(({ company, description, logoImage }, index) => (
-          <React.Fragment key={company}>
-            {index > 0 && <Divider spacingTop="large" spacingBottom="large" />}
-            <div
-              className={classNames(
-                styles['experience-item'],
-                styles[breakpointMediumClassName],
+        {experiences.map(
+          ({ company, description, logoImage, links, images }, index) => (
+            <React.Fragment key={company}>
+              {index > 0 && (
+                <Divider spacingTop="large" spacingBottom="large" />
               )}
-            >
-              <Image
-                src={logoImage}
-                className={classNames(
-                  styles['logo-image'],
-                  styles[breakpointMediumClassName],
-                  styles[breakpointLargeClassName],
-                )}
-                alt=""
-              />
               <div
                 className={classNames(
-                  styles.content,
+                  styles['experience-item'],
                   styles[breakpointMediumClassName],
                 )}
               >
-                <Text Component="h3" weight="medium">
-                  {company}
-                </Text>
-                <div className={styles.description}>
-                  {description.map((paragraph) => (
-                    <Text Component="p" key={paragraph}>
-                      {paragraph}
-                    </Text>
-                  ))}
+                <Image
+                  src={logoImage}
+                  className={classNames(
+                    styles['logo-image'],
+                    styles[breakpointMediumClassName],
+                    styles[breakpointLargeClassName],
+                  )}
+                  alt=""
+                />
+                <div
+                  className={classNames(
+                    styles.content,
+                    styles[breakpointMediumClassName],
+                  )}
+                >
+                  <Text Component="h3" weight="medium">
+                    {company}
+                  </Text>
+                  <div className={styles.description}>
+                    {description.map((paragraph) => (
+                      <Text Component="p" key={paragraph}>
+                        {paragraph}
+                      </Text>
+                    ))}
+                    <div className={styles['link-list']}>
+                      {links?.map(({ text, href }) => (
+                        <Text
+                          Component="a"
+                          href={href}
+                          target="_blank"
+                          className={styles['link-item']}
+                          key={text}
+                        >
+                          {text}
+                        </Text>
+                      ))}
+                    </div>
+                    <div className={styles['image-list']}>
+                      {images?.map((image) => (
+                        <Image
+                          src={image}
+                          key={image.src}
+                          className={styles['image-item']}
+                          alt=""
+                        />
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </React.Fragment>
-        ))}
+            </React.Fragment>
+          ),
+        )}
       </div>
     </div>
   )

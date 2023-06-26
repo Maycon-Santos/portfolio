@@ -1,5 +1,10 @@
 import codezoneLogoImage from '@/assets/experiences/codezone.jpg'
 import hurbLogoImage from '@/assets/experiences/hurb.jpg'
+import olimpiadaDoConhecimentoImage from '@/assets/experiences/olimpiada-do-conhecimento.png'
+
+import Olimpiada1Image from '@/assets/experiences/olimpiada-1.jpg'
+import Olimpiada2Image from '@/assets/experiences/olimpiada-2.jpg'
+import Olimpiada3Image from '@/assets/experiences/olimpiada-3.png'
 
 export const experiences = [
   {
@@ -28,5 +33,24 @@ export const experiences = [
       'Por fim, a empresa adota uma abordagem de microserviços, uma arquitetura moderna que permite o desenvolvimento de sistemas escaláveis e flexíveis. Trabalhar nesse contexto me permitiu colaborar com equipes multifuncionais, desenvolver serviços independentes e especializados, e criar sistemas mais robustos e escaláveis.',
       'Em resumo, a minha jornada na Hurb foi extremamente enriquecedora para o meu crescimento profissional. Através do trabalho com tecnologias como Node.js, Next.js, Python, GoLang, PHP e bancos de dados como MySQL, PostgreSQL e MongoDB, juntamente com a prática de testes unitários e a adoção de microserviços, ampliei meu conhecimento e desenvolvi habilidades valiosas. Estou confiante de que essas experiências na Hurb serão fundamentais para o meu crescimento contínuo e para o sucesso da minha carreira no setor de desenvolvimento de software.',
     ],
+  },
+  {
+    logoImage: olimpiadaDoConhecimentoImage,
+    company:
+      'Experiência de Destaque na Olimpíada do Conhecimento de Web Design da FIRJAN',
+    description: [
+      'Minha participação na Olimpíada do Conhecimento promovida pela FIRJAN foi uma experiência incrível e desafiadora! Desde a etapa escolar, na unidade de Niterói do SENAI, eu me destaquei e conquistei o primeiro lugar entre os alunos competidores.',
+      'Avançando para a etapa estadual, que ocorreu na unidade de Maracanã, fiquei muito orgulhoso por alcançar o segundo lugar, competindo com os vencedores das demais unidades SENAI do estado do Rio de Janeiro. Foi uma competição acirrada e emocionante, na qual pude demonstrar meu conhecimento e habilidades.',
+      'Minha participação foi na categoria de Web Design, na qual fui desafiado com tarefas que colocaram à prova minhas habilidades em HTML, CSS, JavaScript, PHP e MySQL. Essas linguagens e tecnologias são fundamentais para a criação e desenvolvimento de websites, e me dediquei ao máximo para apresentar soluções criativas e funcionais.',
+      'Participar dessa olimpíada me proporcionou a oportunidade de aprimorar minhas habilidades técnicas, expandir meus conhecimentos na área de Web Design e também me conectar com outros estudantes talentosos. Foi uma jornada de aprendizado e superação, na qual enfrentei desafios estimulantes e ganhei valiosa experiência.',
+      'Estou extremamente grato pela oportunidade de ter participado da Olimpíada do Conhecimento promovida pela FIRJAN e de representar minha unidade SENAI. Essa conquista certamente foi o primeiro grande passo na minha carreira no campo de desenvolvimento web.',
+    ],
+    links: [
+      {
+        text: 'Saiba mais no blog da FIRJAN',
+        href: 'https://firjansenai.com.br/cursorio/blog/senai-rio-premia-alunos-na-fase-estadual-da-olimpiada-do-conhecimento',
+      },
+    ],
+    images: [Olimpiada1Image, Olimpiada2Image, Olimpiada3Image],
   },
 ]
