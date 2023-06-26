@@ -2,6 +2,7 @@ import snakeGameImage from '@/assets/projects/snake-game.jpg'
 import enevaImage from '@/assets/projects/eneva.jpg'
 import cortevaImage from '@/assets/projects/corteva.jpg'
 import risqueImage from '@/assets/projects/risque.jpg'
+import infograficoANPImage from '@/assets/projects/infografico-anp.png'
 
 export const projects = [
   {
@@ -42,6 +43,18 @@ export const projects = [
     image: risqueImage,
     links: {
       liveDemo: 'https://www.risque.com.br/',
+    },
+  },
+  {
+    name: 'A Realidade do Saneamento Básico no Brasil',
+    description:
+      'Descubra a realidade do saneamento básico e endemias em cada estado e no Distrito Federal. O aplicativo interativo apresenta dados atualizados sobre cobertura, investimentos per capita e participação privada. Explore indicadores essenciais para entender a qualidade dos serviços de água e esgoto. Além disso, conheça os investimentos previstos para os próximos três anos, permitindo uma visão abrangente do futuro do setor. Tome decisões informadas com informações detalhadas e relevantes em um só lugar.',
+    image: infograficoANPImage,
+    links: {
+      video:
+        'https://drive.google.com/file/d/169xxq-2of__cr-_DE2922GgNwsN14cxP/view?usp=sharing',
+      liveDemo:
+        'https://noticias.portaldaindustria.com.br/especiais/infografico-a-realidade-do-saneamento-basico-no-brasil/',
     },
   },
 ]
