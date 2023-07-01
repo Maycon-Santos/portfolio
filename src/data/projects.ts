@@ -33,7 +33,7 @@ export const projects = [
     image: cortevaImage,
     links: {
       video:
-        'https://drive.google.com/file/d/1qCY_qRHybi1A5a9Jq8Fo879c-7TBINxQ/view?usp=sharing',
+        'https://drive.google.com/file/d/1CCYNLwsH7QPBO4KggH_Ds75jxcqL8sEU/view?usp=sharing',
     },
   },
   {
